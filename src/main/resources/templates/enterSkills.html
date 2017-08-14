@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Robo Resume - Enter Skills</title>
+</head>
+<body>
+<h1>Enter Skills</h1>
+
+
+<!--private String skillTitle;-->
+
+<!--private String skillRating;-->
+
+
+
+<form action="#" th:action="@{/enterSkills}" th:object="${newSkills}" method="post">
+
+    <p>Skill Title: <input type="text" th:field="*{skillTitle}" />
+        <span th:if="${#fields.hasErrors('skillTitle')}" th:errors="*{skillTitle}"/>  </p>
+
+    <p>Skill Rating: <input type="text" th:field="*{skillRating}" />
+        <span th:if="${#fields.hasErrors('skillRating')}" th:errors="*{skillRating}"/>  </p>
+
+
+    <p> <input  type = "submit" value="Submit Skills Info"/> </p>
+
+
+</form>
+<br/>
+<br/>
+<br/>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head lang="en" >
+    <meta  charset="UTF-8" />
+    <title>Robo Resume - Result Employment</title>
+</head>
+<body>
+<h1>Employment Entered</h1>
+
+<p th:text="'Position Title: ' + ${newEmployment.positionTitle}"></p>
+<p th:text="'Organisation: ' + ${newEmployment.organisation}"></p>
+<p th:text="'Start Date: ' + ${newEmployment.startDate}"></p>
+<p th:text="'End Date: ' + ${newEmployment.endDate}"></p>
+<p th:text="'Duty: ' + ${newEmployment.duty}"></p>
+
+<!--private String positionTitle;-->
+<!--private String organisation;-->
+<!--private LocalDate startDate;-->
+<!--private LocalDate endDate;-->
+<!--private String duty;-->
+
+<a href="/enterEmployment" > <input type="submit" value="Add Another Employment"/></a>
+<a href="/enterSkills"> <input type="submit" value="Continue"/></a>
+<!--<a href="/displayPersonAllInfo"> <input type="submit" value="Result"/></a>-->
+
+
+<br/>
+<br/>
+
+
+<!--<a href="/enterEducation"> <input type="submit" value="Continue"/></a>-->
+
+</body>
+</html>
